@@ -3,22 +3,17 @@
     width: 200px;
 }
 
+
 .sidenav a {
+    display: flex;
+    align-items: center;
     color: white;
+    text-decoration: none;
+    padding: 10px;
 }
 
-.sidenav a.mat-list-item {
-    color: white;
-}
-
-
-.mat-list-item a {
-    color: white !important;
+.sidenav a i {
+    margin-right: 10px;
 }
 
 
-
-.sidenav i {
-    padding-right: 10px;
-
-}
