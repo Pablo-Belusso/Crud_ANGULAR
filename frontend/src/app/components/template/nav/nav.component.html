@@ -4,7 +4,8 @@
         
         <mat-nav-list class="nav-list">
 
-            <a href="">
+            <a href="">   <!-- <a mat-list-item> não funcionou direito na tag <a>,
+                                 pois não pegou a cor no css. -->
                 <i class="material-icons">
                     home
                 </i>
@@ -20,5 +21,9 @@
 
         </mat-nav-list>
     </mat-sidenav>
+
+    <mat-sidenav-content>
+        <app-home> </app-home>
+    </mat-sidenav-content>
 
 </mat-sidenav-container>
