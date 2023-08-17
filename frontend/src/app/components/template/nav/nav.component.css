@@ -12,6 +12,11 @@
     padding: 10px;
 }
 
+.sidenav a:hover {
+    background-color: #3345a7;
+    
+}
+
 .sidenav a i {
     margin-right: 10px;
 }
