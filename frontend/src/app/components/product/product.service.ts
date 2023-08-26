@@ -6,4 +6,9 @@ import { Injectable } from '@angular/core';
 export class ProductService {
 
   constructor() { }
+
+  showOnConsole(msg: string): void {
+    console.log(msg)
+  }
+
 }
