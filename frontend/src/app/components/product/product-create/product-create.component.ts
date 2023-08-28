@@ -1,6 +1,7 @@
 import { ProductService } from '../product.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Product } from '../product.model';
 
 @Component({
   selector: 'app-product-create',
@@ -9,6 +10,11 @@ import { Router } from '@angular/router';
 })
 
 export class ProductCreateComponent implements OnInit {
+
+  product: Product = {
+    name:'Camera Sony 6400',
+    price: 7563.66
+  }
 
 
   constructor(private productService: ProductService,
@@ -19,6 +25,8 @@ export class ProductCreateComponent implements OnInit {
   }
 
   createProduct(): void {
+
+    this.productService.create()
     this.productService.showMessage('Produto Criado!')
   }
 
