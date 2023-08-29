@@ -12,7 +12,7 @@ import { Product } from '../product.model';
 export class ProductCreateComponent implements OnInit {
 
   product: Product = {
-    name:'Camera Sony 6400',
+    name:'Teste',
     price: 7563.66
   }
 

@@ -1,19 +1,29 @@
 {
-    "products": [
-        {
-            "id": 1,
-            "name": "Caneta BIC Preta",
-            "price": 5.89
-        },
-        {
-            "id": 2,
-            "name": "Notebook MAC",
-            "price": 10000.5
-        },
-        {
-            "id": 3,
-            "name": "Samsumg S10",
-            "price": 4000
-        }
-    ]
+  "products": [
+    {
+      "id": 1,
+      "name": "Caneta BIC Preta",
+      "price": 5.89
+    },
+    {
+      "id": 2,
+      "name": "Notebook MAC",
+      "price": 10000.5
+    },
+    {
+      "id": 3,
+      "name": "Samsumg S10",
+      "price": 4000
+    },
+    {
+      "name": "Camera Sony 6400",
+      "price": 7563.66,
+      "id": 4
+    },
+    {
+      "name": "Teste",
+      "price": 7563.66,
+      "id": 5
+    }
+  ]
 }
