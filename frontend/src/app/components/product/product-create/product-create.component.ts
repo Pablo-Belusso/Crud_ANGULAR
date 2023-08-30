@@ -12,8 +12,8 @@ import { Product } from '../product.model';
 export class ProductCreateComponent implements OnInit {
 
   product: Product = {
-    name:'Teste',
-    price: 7563.66
+    name:'',
+    price: 0
   }
 
 

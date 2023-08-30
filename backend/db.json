@@ -24,6 +24,11 @@
       "name": "Teste",
       "price": 7563.66,
       "id": 5
+    },
+    {
+      "name": "Notebook Acer",
+      "price": "5000",
+      "id": 6
     }
   ]
 }
