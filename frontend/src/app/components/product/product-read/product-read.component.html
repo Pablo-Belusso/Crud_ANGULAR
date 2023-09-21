@@ -23,7 +23,7 @@
         <th mat-header-cell *matHeaderCellDef>Ações</th>
         <td mat-cell *matCellDef="let row"> <!-- A variável "row" representa um produto -->
 
-          <a routerLink="/products/update" class="edit">
+          <a routerLink="/products/update/{{row.id}}" class="edit">
             <i class="material-icons">
               edit
             </i>
