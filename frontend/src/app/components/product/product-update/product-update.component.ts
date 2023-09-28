@@ -18,7 +18,7 @@ export class ProductUpdateComponent implements OnInit {
   constructor(private ProductService: ProductService, private router: Router) {}
 
   ngOnInit(): void {
-      
+      this.ProductService.readById
   }
 
   updateProduct(): void {
