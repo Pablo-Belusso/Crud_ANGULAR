@@ -1,4 +1,4 @@
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ProductService } from './../product.service';
 import { Component, OnInit } from '@angular/core';
 import { Product } from '../product.model';
@@ -15,7 +15,8 @@ export class ProductUpdateComponent implements OnInit {
     price: 0
   }
 
-  constructor(private ProductService: ProductService, private router: Router) {}
+  constructor(private ProductService: ProductService, private router: Router, 
+    private route: ActivatedRoute) {}
 
   ngOnInit(): void {
       this.ProductService.readById
