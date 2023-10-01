@@ -1,6 +1,7 @@
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ProductService } from './../product.service';
 import { Component, OnInit } from '@angular/core';
+import { Product } from '../product.model';
 
 @Component({
   selector: 'app-product-delete',
@@ -27,7 +28,7 @@ export class ProductDeleteComponent implements OnInit {
 
   deleteProduct(): void {
     this.ProductService.update(this.product).subscribe(() => {
-      this.ProductService.showMessage('Produto Atualizado!')
+      this.ProductService.showMessage('Produto Deletado!')
       this.router.navigate(['/products']);
     })
   }
