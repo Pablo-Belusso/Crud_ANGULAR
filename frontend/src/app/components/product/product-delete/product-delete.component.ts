@@ -8,6 +8,7 @@ import { Product } from '../product.model';
   templateUrl: './product-delete.component.html',
   styleUrls: ['./product-delete.component.css']
 })
+
 export class ProductDeleteComponent implements OnInit {
 
   product: Product = {
@@ -15,7 +16,8 @@ export class ProductDeleteComponent implements OnInit {
     price: 0
   }
 
-  constructor(private ProductService: ProductService, private router: Router, 
+  constructor(private ProductService: ProductService, 
+    private router: Router, 
     private route: ActivatedRoute) {}
 
   ngOnInit(): void {
@@ -27,11 +29,27 @@ export class ProductDeleteComponent implements OnInit {
 
 
   deleteProduct(): void {
-    this.ProductService.update(this.product).subscribe(() => {
-      this.ProductService.showMessage('Produto Deletado!')
+    /* this.ProductService.delete(this.product.id).subscribe(() => {
+      this.ProductService.showMessage('Produto Deletado!') 
       this.router.navigate(['/products']);
-    })
+      })*/
+
+      const id = this.route.snapshot.paramMap.get('id') ?? '';
+        
+        this.ProductService.delete(id).subscribe(
+          () => {
+            this.ProductService.showMessage('Produto Deletado!');
+            this.router.navigate(['/products']);
+          },
+          (error) => {
+            console.error('Erro ao excluir o produto:', error);
+            // Trate o erro de acordo com as necessidades do seu aplicativo.
+          }
+        );
+      
+    
   }
+  
 
   cancel(): void {
     this.router.navigate(['/products']);
