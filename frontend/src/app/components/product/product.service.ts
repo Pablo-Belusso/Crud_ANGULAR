@@ -31,11 +31,6 @@ export class ProductService {
     );
   }
 
-  errorHandler(e: any): Observable<any> {
-    console.log(e)
-    this.showMessage("Ocorreu um erro!", true);
-    return EMPTY
-  }
 
   read (): Observable<Product[]> {
     return this.http.get<Product[]>(this.baseUrl)
@@ -54,6 +49,12 @@ export class ProductService {
   delete (id: String): Observable<Product> {
     const url = `${this.baseUrl}/${id}`;
     return this.http.delete<Product>(url);
+  }
+
+  errorHandler(e: any): Observable<any> {
+    console.log(e)
+    this.showMessage("Ocorreu um erro!", true);
+    return EMPTY
   }
 
 }
