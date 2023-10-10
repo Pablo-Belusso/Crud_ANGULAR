@@ -14,4 +14,8 @@ export class HeaderService {
   })
 
   constructor() { }
+
+  get HeaderData(): HeaderData {
+    return this._headerData.value
+  }
 }
