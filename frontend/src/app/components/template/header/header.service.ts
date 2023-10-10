@@ -18,4 +18,9 @@ export class HeaderService {
   get HeaderData(): HeaderData {
     return this._headerData.value
   }
+
+  set HeaderData(HeaderData: HeaderData) {
+    this._headerData.next(headerData)
+  }
+
 }
