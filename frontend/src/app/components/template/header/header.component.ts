@@ -17,4 +17,12 @@ export class HeaderComponent implements OnInit {
     return this.HeaderService.HeaderData.title
   }
 
+  get icon(): String {
+    return this.HeaderService.HeaderData.title
+  }
+
+  get routeUrl(): String {
+    return this.HeaderService.HeaderData.title
+  }
+
 }

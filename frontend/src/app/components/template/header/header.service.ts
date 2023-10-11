@@ -11,7 +11,7 @@ export class HeaderService {
 
   constructor() {
     this._headerData = new BehaviorSubject<HeaderData>({
-      title: 'Teste',
+      title: 'Início',
       icon: 'home',
       routeUrl: ''
     });
