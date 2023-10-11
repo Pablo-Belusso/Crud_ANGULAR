@@ -10,7 +10,11 @@ export class HeaderComponent implements OnInit {
 
   constructor (private HeaderService: HeaderService) { }
 
-  ngOnInit(): void {
-      
+  ngOnInit(): void {     
   }
+
+  get title(): String {
+    return this.HeaderService.HeaderData.title
+  }
+
 }
