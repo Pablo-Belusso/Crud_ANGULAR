@@ -9,12 +9,19 @@ import { HeaderService } from 'src/app/components/template/header/header.service
 export class HomeComponent implements OnInit {
 
   constructor (private headerservice: HeaderService) {
+
+    headerservice.HeaderData = {
+      title: 'Início',
+      icon: 'home',
+      routeUrl: ''
+    }
+
     headerservice.HeaderData = {
       title: 'Cadastro de Produtos',
       icon: 'storefront',
       routeUrl: '/products'
     }
-   }
+  }
 
   ngOnInit(): void {
       
