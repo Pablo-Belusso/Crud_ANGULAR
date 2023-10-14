@@ -16,11 +16,7 @@ export class HomeComponent implements OnInit {
       routeUrl: ''
     }
 
-    headerservice.HeaderData = {
-      title: 'Cadastro de Produtos',
-      icon: 'storefront',
-      routeUrl: '/products'
-    }
+    
   }
 
   ngOnInit(): void {
